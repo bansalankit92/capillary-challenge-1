@@ -1,0 +1,25 @@
+  <nav class="navbar primary-color navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand waves-effect waves-light" href="#">Capillary</a>
+                </div>
+                <div class="text-center">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <div class="navbar-form " role="search">
+                        <div class="form-group navbar-search">
+                            <input type="text" class="form-control width-100pc" placeholder="Search (name)" [(ngModel)]="searchString" (keyup)="search()">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid margin-top-100" >
+            <game [searchEvent]="eventEmitter"></game>
+        </div>
